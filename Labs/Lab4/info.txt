@@ -1,0 +1,5 @@
+check if the tree is empty.
+
+we make a method to swap the left and right child of the targetted node.
+
+then we recursively apply to the rest of the children and if we start this from the root node it will invert the entire tree

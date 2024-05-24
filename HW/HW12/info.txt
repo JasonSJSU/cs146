@@ -1,0 +1,10 @@
+to supply water we can either build a well or a pipe from another well to the house.
+
+we can just represent a well as a pipe with cost equal to cost the cost of build a well.
+
+then we can just add them all into a sorted list to pick the cheapest pipes.
+
+Use union find to track connected parts, as pipes get added we union the components and prevent cycles and make sure pipes for a tree like path which
+will ensure we get the cheapest possible option.
+
+as we union components we add the cost to a min cost var and return this as our solution.

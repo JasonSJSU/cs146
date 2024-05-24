@@ -1,0 +1,7 @@
+first we check for base cases(empty image and target color already present).
+
+we can then change the pixel that is currently inputed and apply changes if it is with boundaries and matches the original color.
+
+then we can apply this recursively to all for directions.
+
+this is a recursive DFS function.

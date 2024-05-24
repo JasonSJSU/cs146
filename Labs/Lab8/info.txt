@@ -1,0 +1,8 @@
+we use a dynamic programming array where dp[i] represents the min number of coins needed to make the amount 'i'
+
+we intialize the array with a value that is extremely large so its more than any possible number of coins needed. check for base case of 0 as well.
+
+for each coin in the array we iterate through all possible amounts from the coin's value to the targetted amount
+for each amount 'x' we update dp[x] to the minimum of its current value and dp[x-coin]+1 to represent the current coin to form the amount 'x'
+
+if dp[amount] is still flaot inf in python and amount + 1 in java then its not possible to make the target amount with given amount of coins so we return -1

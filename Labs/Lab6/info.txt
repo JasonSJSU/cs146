@@ -1,0 +1,13 @@
+with each course being a nod an a prereq being a directed edge we can tell if you can complete all courses based on if there is a cycle or not.
+if there is a cycle then you cannot complete all courses otherwise u can.
+
+we use an adjacency list to represent the course and prereqs as a directed graph
+we use dfs to detect if there are cycles. we have a visted array to track if the state of each node of if they are visted or not.
+0 meants not visted
+1 means currently visited and is part of the current dfs call stack
+2 means completely visited
+
+we perform a dfs on nodes that are yet unvisited. if we find a node is currently being visted and visted[node] == 1 then there is a cycle
+otherwise we mark as completely visted.
+
+whenever we run into a cycle we turn false and otherwise true.

@@ -1,0 +1,7 @@
+first we check for empty tree.
+
+then we check starting from the root node if it follows BST with its left child's value being lower than the parent node and the right child's value
+being higher the parent node. return false if it fails this check.
+
+then recursively apply for this BST property on the children and continue until the entire tree is checked. after every node is checked
+return true.

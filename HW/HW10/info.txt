@@ -1,0 +1,7 @@
+first we check for an empty tree and return if it is
+
+then we create a queue to use for bfs to traverse the tree lvl by lvl
+
+iterate through each level with a while loop and add the nodes in each level to a list, add each list of nodes to the results list
+
+return results list

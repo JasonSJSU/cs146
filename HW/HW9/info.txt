@@ -1,0 +1,10 @@
+we first check for empty tree.
+
+we know 
+if both p and q are smaller than root, LCA lies in left subtree
+if both p and q are greater than root, LCA lies in right subtree
+if one of p or q is on one side and the other is on the other side, root is the LCA
+
+so we can call lowestCommonAncestor function recursively to either child if the 'root' variable is not the LCA yet until the 'root' node has p and q on different sides.
+
+then return the node of 'root'
